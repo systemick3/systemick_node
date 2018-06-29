@@ -32,7 +32,7 @@ var twitterLogin = function (req, res, next) {
 };
 
 var twitterLoginCallback = function (req, res, next) {
-  var bcrypt = require('bcrypt'),
+  var bcrypt = require('bcryptjs'),
     property,
     config = require('../config'),
     OAuth = require('oauth').OAuth,
